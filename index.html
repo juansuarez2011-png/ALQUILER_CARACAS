@@ -6,13 +6,13 @@
   <title>Alquila Caracas — Propuesta Interactiva y Demo Beta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:wght@500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600;700&family=Montserrat:wght@500;600;700;800&family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:wght@500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #16A34A;
-      --primary-dark: #15803D;
-      --primary-soft: #DCFCE7;
-      --sage-accent: #4B6B58;
+      --primary: #2F6F4E;
+      --primary-dark: #1E4D36;
+      --primary-soft: #E6F0EA;
+      --sage-accent: #526B5E;
       --primary-text: #FFFFFF;
       --bg-page: #FFFFFF;
       --surface-soft: #F4F7F5;
@@ -20,8 +20,11 @@
       --text-main: #1E293B;
       --text-muted: #5A6B62;
       --border-color: #DCE5E0;
+      --btn-bg: #2F6F4E;
+      --btn-color: #FFFFFF;
+      --btn-border: transparent;
       --btn-radius: 12px;
-      --btn-shadow: 0 3px 10px rgba(22, 163, 74, 0.18);
+      --btn-shadow: 0 3px 10px rgba(47, 111, 78, 0.16);
       --font-main: 'Inter', sans-serif;
     }
 
@@ -280,9 +283,9 @@
       background: #FFFFFF;
       color: var(--text-main);
       border: 1px solid var(--border-color);
-      padding: 8px 13px;
+      padding: 7px 12px;
       border-radius: 10px;
-      font-size: 0.81rem;
+      font-size: 0.8rem;
       font-weight: 600;
       cursor: pointer;
       transition: 0.2s;
@@ -311,7 +314,7 @@
       display: inline-block;
       background: var(--primary-soft);
       color: var(--primary-dark);
-      border: 1px solid rgba(22, 163, 74, 0.25);
+      border: 1px solid rgba(47, 111, 78, 0.25);
       font-weight: 800;
       font-size: 0.74rem;
       padding: 3px 9px;
@@ -351,10 +354,10 @@
       font-size: 0.86rem;
       border-radius: var(--btn-radius);
       box-shadow: var(--btn-shadow);
-      border: none;
+      border: 1.5px solid var(--btn-border);
       cursor: pointer;
       font-family: var(--font-main);
-      transition: transform 0.15s, filter 0.2s;
+      transition: transform 0.15s, filter 0.2s, background-color 0.2s, color 0.2s;
     }
 
     .btn-demo:active {
@@ -362,8 +365,9 @@
     }
 
     .btn-primary {
-      background: var(--primary);
-      color: var(--primary-text);
+      background: var(--btn-bg);
+      color: var(--btn-color);
+      border-color: var(--btn-border);
     }
 
     .btn-secondary {
@@ -376,6 +380,7 @@
     .btn-whatsapp-inline {
       background: #25D366;
       color: #FFFFFF;
+      border-color: transparent;
       box-shadow: 0 3px 10px rgba(37, 211, 102, 0.25);
     }
 
@@ -428,7 +433,7 @@
     .city-pill {
       background: var(--primary-soft);
       color: var(--primary-dark);
-      border: 1px solid rgba(22, 163, 74, 0.3);
+      border: 1px solid rgba(47, 111, 78, 0.3);
       font-size: 0.74rem;
       font-weight: 700;
       padding: 4px 10px;
@@ -599,7 +604,7 @@
       background: var(--primary);
       color: var(--primary-text);
       border-color: var(--primary);
-      box-shadow: 0 5px 14px rgba(22, 163, 74, 0.24);
+      box-shadow: 0 5px 14px rgba(47, 111, 78, 0.24);
     }
 
     .cat-item span {
@@ -726,7 +731,7 @@
     /* PANEL DE VALIDACIÓN Y WHATSAPP (P-03) */
     .booking-panel {
       background: var(--surface-soft);
-      border: 1.5px solid rgba(22, 163, 74, 0.35);
+      border: 1.5px solid rgba(47, 111, 78, 0.35);
       border-radius: 20px;
       padding: 20px;
       position: sticky;
@@ -766,25 +771,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-    }
-
-    .security-box {
-      background: #FFFFFF;
-      border: 1px dashed var(--primary);
-      border-radius: 12px;
-      padding: 11px;
-      margin: 12px 0;
-    }
-
-    .security-box h5 {
-      font-size: 0.81rem;
-      color: var(--primary-dark);
-      margin-bottom: 3px;
-    }
-
-    .security-box p {
-      font-size: 0.73rem;
-      color: var(--text-muted);
     }
 
     /* BOTÓN FLOTANTE DE WHATSAPP TOTALMENTE REDONDO Y DIFERENCIADO */
@@ -913,7 +899,7 @@
         <div class="brand-dot"></div>
         <div>
           <h1 id="headerBrandTitle">Alquila Caracas</h1>
-          <span>Fondo Blanco • Verde Gris • Listo para GitHub</span>
+          <span>Fondo Blanco • Tonos Sobrios • Listo para GitHub</span>
         </div>
       </div>
 
@@ -944,12 +930,12 @@
          PESTAÑA 1: LÁMINAS DE FLUJO Y CONFIGURADOR VISUAL
          ========================================================== -->
     <section id="tab-laminas" class="tab-panel active" data-screen="Lámina 01 - Estilos y Especificaciones">
-      <h2 class="section-title">🎨 Lámina 1: Configurador Visual en Fondo Blanco</h2>
-      <p class="section-subtitle">Comienza con prioridad en <strong>Verde y Verde Gris</strong> sobre fondo blanco limpio, y prueba otras combinaciones (Mercado Libre, Rappi o Salvia/Oliva).</p>
+      <h2 class="section-title">🎨 Lámina 1: Estudio de Colores, Fuentes y Botones</h2>
+      <p class="section-subtitle">Prueba distintos verdes sobrios (sin verde chillón), otras gamas elegantes en fondo blanco, 8 fuentes y 6 estilos/tonos de botones.</p>
 
       <div class="grid-2">
         <div class="card">
-          <h3>🖌️ Nombre, Paletas y Tipografías</h3>
+          <h3>🖌️ Nombre, Paletas Sobrias y 8 Fuentes</h3>
 
           <div class="config-group">
             <span class="config-label">1. Nombre Comercial</span>
@@ -961,61 +947,83 @@
           </div>
 
           <div class="config-group">
-            <span class="config-label">2. Combinaciones de Color (Fondo Blanco)</span>
+            <span class="config-label">2. Paletas en Fondo Blanco (Verdes Sobrios y Variantes)</span>
             <div class="chip-row" id="paletteOptions">
-              <button class="option-chip selected" onclick="setPalette('#16A34A', '#15803D', '#DCFCE7', '#FFFFFF', this)">🌿 Verde Esmeralda + Verde Gris (Base)</button>
-              <button class="option-chip" onclick="setPalette('#4D7C0F', '#3F6212', '#ECFCCB', '#FFFFFF', this)">🍃 Verde Oliva / Salvia + Gris Claro</button>
-              <button class="option-chip" onclick="setPalette('#EAB308', '#A16207', '#FEF9C3', '#1E293B', this)">🟡 Amarillo Mercado Libre + Gris Suave</button>
-              <button class="option-chip" onclick="setPalette('#EA580C', '#C2410C', '#FFEDD5', '#FFFFFF', this)">🟠 Naranja Rappi + Gris Limpio</button>
+              <button class="option-chip selected" onclick="setPalette('#2F6F4E', '#1E4D36', '#E6F0EA', '#FFFFFF', this)">🌲 Verde Bosque Sobrio</button>
+              <button class="option-chip" onclick="setPalette('#4A7C59', '#31543B', '#EBF3ED', '#FFFFFF', this)">🍃 Verde Salvia Clásico</button>
+              <button class="option-chip" onclick="setPalette('#1F5A4B', '#133B31', '#E2EFEC', '#FFFFFF', this)">🌿 Verde Pino / Esmeralda Oscuro</button>
+              <button class="option-chip" onclick="setPalette('#5C7A67', '#3F5648', '#EEF3F0', '#FFFFFF', this)">🌫️ Verde Grisáceo Suave</button>
+              <button class="option-chip" onclick="setPalette('#1E3A5F', '#142740', '#E8EEF5', '#FFFFFF', this)">⚓ Azul Marino Corporativo</button>
+              <button class="option-chip" onclick="setPalette('#B4690E', '#7C4708', '#FDF3E6', '#FFFFFF', this)">🌾 Ámbar / Mostaza Cálido</button>
+              <button class="option-chip" onclick="setPalette('#9A3412', '#6C220A', '#FDECE6', '#FFFFFF', this)">🧱 Terracota Industrial</button>
+              <button class="option-chip" onclick="setPalette('#334155', '#1E293B', '#EDF2F7', '#FFFFFF', this)">🖤 Carbón / Pizarra</button>
             </div>
           </div>
 
           <div class="config-group">
-            <span class="config-label">3. Fuente / Tipografía</span>
+            <span class="config-label">3. Tipografía (8 Fuentes Disponibles)</span>
             <div class="chip-row" id="fontOptions">
-              <button class="option-chip selected" onclick="setFont('\'Inter\', sans-serif', this)">Inter (Limpia)</button>
-              <button class="option-chip" onclick="setFont('\'Plus Jakarta Sans\', sans-serif', this)">Plus Jakarta (Ridery)</button>
-              <button class="option-chip" onclick="setFont('\'Poppins\', sans-serif', this)">Poppins (Rappi)</button>
-              <button class="option-chip" onclick="setFont('\'Space Grotesk\', sans-serif', this)">Space Grotesk (Técnica)</button>
+              <button class="option-chip selected" onclick="setFont('\'Inter\', sans-serif', this)">Inter</button>
+              <button class="option-chip" onclick="setFont('\'Plus Jakarta Sans\', sans-serif', this)">Plus Jakarta Sans</button>
+              <button class="option-chip" onclick="setFont('\'Poppins\', sans-serif', this)">Poppins</button>
+              <button class="option-chip" onclick="setFont('\'Space Grotesk\', sans-serif', this)">Space Grotesk</button>
+              <button class="option-chip" onclick="setFont('\'Montserrat\', sans-serif', this)">Montserrat</button>
+              <button class="option-chip" onclick="setFont('\'DM Sans\', sans-serif', this)">DM Sans</button>
+              <button class="option-chip" onclick="setFont('\'Nunito\', sans-serif', this)">Nunito</button>
+              <button class="option-chip" onclick="setFont('\'Lora\', serif', this)">Lora (Editorial)</button>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <h3>🔘 Estilos de Botones e Iconos</h3>
+          <h3>🔘 6 Tipos de Botones, Tonos y Contenedores</h3>
 
           <div class="config-group">
-            <span class="config-label">4. Estilo de Botones</span>
+            <span class="config-label">4. Forma / Tipo de Botón (6 Estilos)</span>
             <div class="chip-row" id="radiusOptions">
-              <button class="option-chip" onclick="setButtonStyle('4px', 'none', this)">Rectos</button>
-              <button class="option-chip selected" onclick="setButtonStyle('12px', '0 3px 10px rgba(22, 163, 74, 0.18)', this)">Semi-redondeados (ML)</button>
-              <button class="option-chip" onclick="setButtonStyle('99px', '0 3px 10px rgba(22, 163, 74, 0.18)', this)">Píldora (Ridery / Rappi)</button>
-              <button class="option-chip" onclick="setButtonStyle('14px', '0 4px 0 rgba(21, 128, 61, 0.35)', this)">3D con Relieve</button>
+              <button class="option-chip" onclick="setButtonShape('4px', 'none', 'solid', this)">Recto</button>
+              <button class="option-chip selected" onclick="setButtonShape('12px', '0 3px 10px rgba(15, 23, 42, 0.12)', 'solid', this)">Semi-redondeado</button>
+              <button class="option-chip" onclick="setButtonShape('99px', '0 3px 10px rgba(15, 23, 42, 0.12)', 'solid', this)">Píldora</button>
+              <button class="option-chip" onclick="setButtonShape('12px', '0 4px 0 rgba(15, 23, 42, 0.25)', 'solid', this)">3D Relieve</button>
+              <button class="option-chip" onclick="setButtonShape('10px', 'none', 'outline', this)">Contorno (Outline)</button>
+              <button class="option-chip" onclick="setButtonShape('12px', 'none', 'soft', this)">Suave (Soft Tint)</button>
             </div>
           </div>
 
           <div class="config-group">
-            <span class="config-label">5. Contenedor de Iconos</span>
+            <span class="config-label">5. Tono de los Botones Principales</span>
+            <div class="chip-row" id="buttonToneOptions">
+              <button class="option-chip selected" onclick="setButtonTone('#2F6F4E', '#FFFFFF', this)">Verde Bosque</button>
+              <button class="option-chip" onclick="setButtonTone('#1E4D36', '#FFFFFF', this)">Verde Oscuro</button>
+              <button class="option-chip" onclick="setButtonTone('#4F772D', '#FFFFFF', this)">Verde Musgo</button>
+              <button class="option-chip" onclick="setButtonTone('#2B5B84', '#FFFFFF', this)">Azul Acero</button>
+              <button class="option-chip" onclick="setButtonTone('#8C5A2B', '#FFFFFF', this)">Bronce / Tierra</button>
+              <button class="option-chip" onclick="setButtonTone('#1E293B', '#FFFFFF', this)">Negro Grafito</button>
+            </div>
+          </div>
+
+          <div class="config-group">
+            <span class="config-label">6. Contenedor de Iconos</span>
             <div class="chip-row" id="iconShapeOptions">
-              <button class="option-chip selected" onclick="setIconShape('circle', this)">Circulares (Mercado Libre)</button>
-              <button class="option-chip" onclick="setIconShape('square', this)">Cuadrados Suaves (Rappi)</button>
+              <button class="option-chip selected" onclick="setIconShape('circle', this)">Circulares</button>
+              <button class="option-chip" onclick="setIconShape('square', this)">Cuadrados Suaves</button>
               <button class="option-chip" onclick="setIconShape('tag', this)">Asimétricos</button>
             </div>
           </div>
 
           <div class="config-group">
-            <span class="config-label">Muestra de Botones en Fondo Blanco</span>
+            <span class="config-label">Vista Previa de Botones en Fondo Blanco</span>
             <div class="chip-row" style="margin-top: 8px; align-items: center;">
               <button class="btn-demo btn-primary" onclick="switchTab('demo', document.querySelectorAll('.tab-btn')[1])">Alquilar / Validar</button>
               <button class="btn-demo btn-secondary">Ver kVA / Toneladas</button>
-              <span style="font-size: 0.78rem; color: var(--text-muted);">+ Botón redondo WhatsApp flotante abajo a la derecha</span>
+              <span style="font-size: 0.78rem; color: var(--text-muted);">+ Botón redondo WhatsApp flotante</span>
             </div>
           </div>
         </div>
       </div>
 
       <h2 class="section-title">🗺️ Lámina 2: Flujo de 4 Pantallas y Desplegables Técnicos</h2>
-      <p class="section-subtitle">Diseño claro y directo enfocado únicamente en equipos disponibles en Caracas, máxima duración de 12 horas y validación de seguridad.</p>
+      <p class="section-subtitle">Diseño claro y directo enfocado únicamente en equipos disponibles en Caracas, máxima duración de 12 horas y solicitud directa por WhatsApp.</p>
 
       <div class="grid-4">
         <div class="screen-node">
@@ -1040,12 +1048,12 @@
         </div>
 
         <div class="screen-node">
-          <span class="screen-code">P-03 • FILTRO DE SEGURIDAD</span>
-          <h3>Validación Cédula y RIF</h3>
+          <span class="screen-code">P-03 • DATOS Y WHATSAPP</span>
+          <h3>Ficha Rápida de Solicitud</h3>
           <ul>
-            <li>Exige <strong>Nombre, Cédula, Teléfono y Correo</strong>.</li>
+            <li>Captura <strong>Nombre, Cédula, Teléfono y Correo</strong>.</li>
             <li>Si es empresa, solicita <strong>RIF</strong> obligatorio.</li>
-            <li>Envía la ficha ordenada a <strong>WhatsApp</strong> para chequeo previo de perfil.</li>
+            <li>Envía la ficha ordenada a <strong>WhatsApp</strong> en un toque.</li>
           </ul>
         </div>
 
@@ -1184,12 +1192,12 @@
           </div>
         </div>
 
-        <!-- PANEL DE VALIDACIÓN Y WHATSAPP (P-03) -->
-        <div class="booking-panel" data-screen="P-03 Ficha de Seguridad y WhatsApp">
-          <span class="screen-code">PANTALLA P-03 • VALIDACIÓN Y CIERRE</span>
+        <!-- PANEL DE SOLICITUD Y WHATSAPP (P-03) SIN CUADRO PUNTEADO -->
+        <div class="booking-panel" data-screen="P-03 Ficha de Solicitud y WhatsApp">
+          <span class="screen-code">PANTALLA P-03 • SOLICITUD Y CIERRE</span>
           <h3 style="margin-bottom: 4px; color: var(--text-main);">Solicitud de Alquiler (Máx. 12h)</h3>
-          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px;">
-            Verifica la capacidad seleccionada, elige horas y modalidad, y completa los datos para chequeo de seguridad.
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 14px;">
+            Verifica la capacidad seleccionada, elige horas y modalidad, y completa los datos del solicitante.
           </p>
 
           <div class="form-group">
@@ -1218,11 +1226,6 @@
                 <option value="Sin Chofer">Sin Chofer</option>
               </select>
             </div>
-          </div>
-
-          <div class="security-box">
-            <h5>🛡️ Validación Rápida de Perfil (Obligatorio)</h5>
-            <p>Se requiere Cédula (y RIF si es empresa) para verificación de seguridad antes de confirmar entrega en Caracas.</p>
           </div>
 
           <div class="form-row-2">
@@ -1261,7 +1264,7 @@
 
           <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px;">
             <button class="btn-demo btn-primary" style="flex: 1;" onclick="submitRentalToWhatsApp()">
-              ✅ Solicitar y Validar por WhatsApp
+              ✅ Solicitar por WhatsApp
             </button>
             <button class="btn-demo btn-whatsapp-inline" onclick="triggerExpressWhatsApp()">
               Consulta Exprés
@@ -1284,7 +1287,7 @@
           <ul style="font-size: 0.86rem; color: var(--text-muted); padding-left: 18px;">
             <li style="margin-bottom: 8px;"><strong>App Web Instalable + Código QR:</strong> Acceso directo desde cualquier teléfono o PC sin depender de aprobaciones lentas de tiendas.</li>
             <li style="margin-bottom: 8px;"><strong>Catálogo Inteligente "Solo Disponible":</strong> Interruptor de 1 clic para ocultar equipos ocupados y selectores de capacidad (kVA, Toneladas, Blindaje).</li>
-            <li style="margin-bottom: 8px;"><strong>Registro de Seguridad + WhatsApp Directo:</strong> Captura de Nombre, Cédula, RIF, Correo y Teléfono con disparo automático a WhatsApp.</li>
+            <li style="margin-bottom: 8px;"><strong>Ficha de Solicitud + WhatsApp Directo:</strong> Captura de Nombre, Cédula, RIF, Correo y Teléfono con disparo automático a WhatsApp.</li>
             <li><strong>Botón Redondo de WhatsApp:</strong> Consulta exprés inmediata desde cualquier pantalla.</li>
           </ul>
         </div>
@@ -1311,7 +1314,7 @@
                 <td>$650 USD</td>
               </tr>
               <tr>
-                <td><strong>3. Panel de Disponibilidad y Registro Seguridad</strong> (Cédula/RIF + Código QR)</td>
+                <td><strong>3. Panel de Disponibilidad y Ficha de Solicitud</strong> (Cédula/RIF + Código QR)</td>
                 <td>4 – 5 días</td>
                 <td>$300 USD</td>
               </tr>
@@ -1499,6 +1502,46 @@
       }
     ];
 
+    let currentBtnToneBg = '#2F6F4E';
+    let currentBtnToneText = '#FFFFFF';
+    let currentBtnMode = 'solid';
+    let currentBtnShadow = '0 3px 10px rgba(15, 23, 42, 0.12)';
+
+    function applyButtonAppearance() {
+      const root = document.documentElement;
+      if (currentBtnMode === 'outline') {
+        root.style.setProperty('--btn-bg', '#FFFFFF');
+        root.style.setProperty('--btn-color', currentBtnToneBg);
+        root.style.setProperty('--btn-border', currentBtnToneBg);
+        root.style.setProperty('--btn-shadow', 'none');
+      } else if (currentBtnMode === 'soft') {
+        root.style.setProperty('--btn-bg', '#EBF3ED');
+        root.style.setProperty('--btn-color', currentBtnToneBg);
+        root.style.setProperty('--btn-border', 'transparent');
+        root.style.setProperty('--btn-shadow', 'none');
+      } else {
+        root.style.setProperty('--btn-bg', currentBtnToneBg);
+        root.style.setProperty('--btn-color', currentBtnToneText);
+        root.style.setProperty('--btn-border', 'transparent');
+        root.style.setProperty('--btn-shadow', currentBtnShadow);
+      }
+    }
+
+    function setButtonShape(radius, shadow, mode, el) {
+      document.documentElement.style.setProperty('--btn-radius', radius);
+      currentBtnShadow = shadow;
+      currentBtnMode = mode;
+      applyButtonAppearance();
+      selectChip('#radiusOptions', el);
+    }
+
+    function setButtonTone(bgColor, textColor, el) {
+      currentBtnToneBg = bgColor;
+      currentBtnToneText = textColor;
+      applyButtonAppearance();
+      selectChip('#buttonToneOptions', el);
+    }
+
     function renderFleet(filter = 'todos') {
       const container = document.getElementById('fleetContainer');
       const filtered = filter === 'todos' ? fleetItems : fleetItems.filter(i => i.cat === filter);
@@ -1587,12 +1630,6 @@
       selectChip('#fontOptions', el);
     }
 
-    function setButtonStyle(radius, shadow, el) {
-      document.documentElement.style.setProperty('--btn-radius', radius);
-      document.documentElement.style.setProperty('--btn-shadow', shadow);
-      selectChip('#radiusOptions', el);
-    }
-
     function setIconShape(shape, el) {
       const strip = document.getElementById('categoryStrip');
       strip.classList.remove('icons-square', 'icons-tag');
@@ -1623,7 +1660,7 @@
       const rif = document.getElementById('clientRif').value.trim();
 
       if (!name || !cedula || !phone || !email) {
-        alert('Completa Nombre, Cédula de Identidad, Teléfono y Correo para la validación de seguridad.');
+        alert('Completa Nombre, Cédula de Identidad, Teléfono y Correo para enviar la solicitud.');
         return;
       }
       if (isCompany && !rif) {
@@ -1637,7 +1674,7 @@
         `• *Duración:* ${hours}\n` +
         `• *Modalidad:* ${driver}\n` +
         `--------------------------\n` +
-        `*DATOS PARA VALIDACIÓN DE SEGURIDAD:*\n` +
+        `*DATOS DEL SOLICITANTE:*\n` +
         `• *Cliente:* ${name}\n` +
         `• *Cédula:* ${cedula}\n` +
         `• *Teléfono:* ${phone}\n` +
